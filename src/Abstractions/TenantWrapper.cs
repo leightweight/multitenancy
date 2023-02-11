@@ -1,6 +1,6 @@
 using JetBrains.Annotations;
 
-namespace Leightweight.Multitenancy.Abstractions;
+namespace Leightweight.Multitenancy;
 
 /// <summary>
 /// Wraps a <typeparamref name="TTenant"/> so it can be used as an

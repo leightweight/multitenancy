@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using JetBrains.Annotations;
 
-namespace Leightweight.Multitenancy.Abstractions;
+namespace Leightweight.Multitenancy;
 
 /// <summary>
 /// Used to resolve <typeparamref name="TTenant"/> tenants.

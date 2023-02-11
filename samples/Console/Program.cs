@@ -1,5 +1,5 @@
 ﻿using System;
-using Leightweight.Multitenancy.Abstractions;
+using Leightweight.Multitenancy;
 
 var user = new User(Guid.NewGuid(), "jleight");
 var wrapper = new TenantWrapper<User> { Tenant = user };

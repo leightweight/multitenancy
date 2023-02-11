@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace Leightweight.Multitenancy.Abstractions;
+namespace Leightweight.Multitenancy;
 
 /// <summary>
 /// Used to retrieve configured <typeparamref name="TTenant"/> tenant.
