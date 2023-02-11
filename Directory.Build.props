@@ -7,4 +7,10 @@
     <RepositoryUrl>https://github.com/leightweight/multitenancy</RepositoryUrl>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
 </Project>
