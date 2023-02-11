@@ -13,4 +13,11 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <NetCoreAppCurrent>net7.0</NetCoreAppCurrent>
+    <NetCoreAppPrevious>net6.0</NetCoreAppPrevious>
+    <NetCoreAppMinimum>net6.0</NetCoreAppMinimum>
+    <NetFrameworkMinimum>net462</NetFrameworkMinimum>
+  </PropertyGroup>
+
 </Project>
