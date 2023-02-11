@@ -1,0 +1,10 @@
+<Project>
+
+  <PropertyGroup>
+    <Authors>Jonathon Leight</Authors>
+    <Description>Simple multitenancy for your .NET project.</Description>
+    <Copyright>Copyright © Jonathon Leight</Copyright>
+    <RepositoryUrl>https://github.com/leightweight/multitenancy</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
