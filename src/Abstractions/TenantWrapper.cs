@@ -7,7 +7,7 @@ namespace Leightweight.Multitenancy;
 /// </summary>
 /// <typeparam name="TTenant"></typeparam>
 [PublicAPI]
-public class TenantWrapper<TTenant> : ITenant<TTenant>
+public sealed class TenantWrapper<TTenant> : ITenant<TTenant>
 {
     /// <summary>
     /// The <typeparamref name="TTenant"/> for the configured scope, or <see langword="null"/> if one wasn't resolved.
