@@ -16,11 +16,5 @@ public interface ITenantResolver<TTenant>
     /// <returns>
     /// A <typeparamref name="TTenant"/> instance for the scope, or <see langword="null"/> if one cannot be resolved.
     /// </returns>
-#if NETSTANDARD2_0
-    Task<TTenant?> Resolve();
-#elif NET462
-    Task<TTenant?> Resolve();
-#else
     ValueTask<TTenant?> Resolve();
-#endif
 }
