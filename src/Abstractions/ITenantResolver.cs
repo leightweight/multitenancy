@@ -14,8 +14,7 @@ public interface ITenantResolver<TTenant>
     /// Resolves a <typeparamref name="TTenant"/> tenant for the current scope.
     /// </summary>
     /// <returns>
-    /// A <typeparamref name="TTenant"/> instance for the scope, or
-    /// <see langword="null"/> if one cannot be resolved.
+    /// A <typeparamref name="TTenant"/> instance for the scope, or <see langword="null"/> if one cannot be resolved.
     /// </returns>
 #if NETSTANDARD2_0
     Task<TTenant?> Resolve();
