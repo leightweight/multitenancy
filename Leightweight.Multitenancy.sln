@@ -4,6 +4,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{E6EF81AA-EC08-4709-BD7F-02E5260ED065}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leightweight.Multitenancy.Samples.AspNetCoreApp", "samples\AspNetCoreApp\Leightweight.Multitenancy.Samples.AspNetCoreApp.csproj", "{AF8C996D-4A53-43E7-9041-7668D1463D9C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leightweight.Multitenancy.Samples.ConsoleApp", "samples\ConsoleApp\Leightweight.Multitenancy.Samples.ConsoleApp.csproj", "{18A11026-0E6B-4B33-8902-250E7F1355FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{32303ADB-8F7A-4BFF-89F5-8DE1DF0B1330}"
@@ -11,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leightweight.Multitenancy", "src\Multitenancy\Leightweight.Multitenancy.csproj", "{52A1EDE6-C506-4662-8425-8D01BEF44C89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leightweight.Multitenancy.Abstractions", "src\Abstractions\Leightweight.Multitenancy.Abstractions.csproj", "{FF3CB78A-6886-445C-A89C-2C63D189E062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leightweight.Multitenancy.AspNetCore", "src\AspNetCore\Leightweight.Multitenancy.AspNetCore.csproj", "{D7918677-CB1C-4B32-B2B6-0A75F12EBCAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF8C996D-4A53-43E7-9041-7668D1463D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8C996D-4A53-43E7-9041-7668D1463D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8C996D-4A53-43E7-9041-7668D1463D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8C996D-4A53-43E7-9041-7668D1463D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{18A11026-0E6B-4B33-8902-250E7F1355FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{18A11026-0E6B-4B33-8902-250E7F1355FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A11026-0E6B-4B33-8902-250E7F1355FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,10 +41,16 @@ Global
 		{FF3CB78A-6886-445C-A89C-2C63D189E062}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF3CB78A-6886-445C-A89C-2C63D189E062}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF3CB78A-6886-445C-A89C-2C63D189E062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7918677-CB1C-4B32-B2B6-0A75F12EBCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7918677-CB1C-4B32-B2B6-0A75F12EBCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7918677-CB1C-4B32-B2B6-0A75F12EBCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7918677-CB1C-4B32-B2B6-0A75F12EBCAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{AF8C996D-4A53-43E7-9041-7668D1463D9C} = {E6EF81AA-EC08-4709-BD7F-02E5260ED065}
 		{18A11026-0E6B-4B33-8902-250E7F1355FA} = {E6EF81AA-EC08-4709-BD7F-02E5260ED065}
 		{52A1EDE6-C506-4662-8425-8D01BEF44C89} = {32303ADB-8F7A-4BFF-89F5-8DE1DF0B1330}
 		{FF3CB78A-6886-445C-A89C-2C63D189E062} = {32303ADB-8F7A-4BFF-89F5-8DE1DF0B1330}
+		{D7918677-CB1C-4B32-B2B6-0A75F12EBCAE} = {32303ADB-8F7A-4BFF-89F5-8DE1DF0B1330}
 	EndGlobalSection
 EndGlobal
