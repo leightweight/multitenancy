@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - v*
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION: 1
+      TERM: xterm
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup .NET 7.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.x
+      - name: Pack
+        run: dotnet pack Leightweight.Multitenancy.csproj -c Release -o packages
+      - name: Push
+        run: dotnet nuget push "packages/*.nupkg" -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: packages
+          path: packages/**/*
