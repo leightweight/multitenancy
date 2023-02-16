@@ -3,14 +3,23 @@
   <PropertyGroup>
     <Authors>Jonathon Leight</Authors>
     <Description>Simple multitenancy for your .NET project.</Description>
-    <Copyright>Copyright © Jonathon Leight</Copyright>
-    <RepositoryUrl>https://github.com/leightweight/multitenancy</RepositoryUrl>
+    <Copyright>Copyright (c) Jonathon Leight</Copyright>
+    <PackageProjectUrl>https://github.com/leightweight/multitenancy</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageTags>multitenancy;tenancy;tenant;tenants</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <PropertyGroup>
     <LangVersion>preview</LangVersion>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Features>strict</Features>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -21,7 +30,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
+    <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../LICENSE" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
 
 </Project>

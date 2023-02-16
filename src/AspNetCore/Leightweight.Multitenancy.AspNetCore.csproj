@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <PackageId>Leightweight.Multitenancy.AspNetCore</PackageId>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
