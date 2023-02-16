@@ -12,8 +12,6 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageTags>multitenancy;tenancy;tenant;tenants</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <PropertyGroup>
