@@ -35,15 +35,18 @@ public static class MultitenancyApplicationBuilderExtensions
     private static void UseTenantCore<TTenant>(IApplicationBuilder app)
         where TTenant : class
     {
-        if (app.ApplicationServices.GetService<ITenant<TTenant>>() is null ||
-            app.ApplicationServices.GetService<ITenantResolver<TTenant>>() is null)
+        using (var scope = app.ApplicationServices.CreateScope())
         {
-            throw new InvalidOperationException(
-                string.Format(
-                    MissingServiceFormat,
-                    nameof(MultitenancyServiceCollectionExtensions.AddTenant),
-                    nameof(MultitenancyBuilder<TTenant>.WithResolver),
-                    typeof(TTenant)));
+            if (scope.ServiceProvider.GetService<ITenant<TTenant>>() is null ||
+                scope.ServiceProvider.GetService<ITenantResolver<TTenant>>() is null)
+            {
+                throw new InvalidOperationException(
+                    string.Format(
+                        MissingServiceFormat,
+                        nameof(MultitenancyServiceCollectionExtensions.AddTenant),
+                        nameof(MultitenancyBuilder<TTenant>.WithResolver),
+                        typeof(TTenant)));
+            }
         }
 
         app.UseMiddleware<MultitenancyMiddleware<TTenant>>();
